@@ -1,4 +1,4 @@
-import rbt_node as rbt
+import rbt_node as rbtn
 
 def new_map():
     dev = {
@@ -39,7 +39,7 @@ def rotate_left(node_rbt):
 
 def insert_node(root, key, value):
     if root is None:
-        return rbt.new_node(key, value, "RED") 
+        return rbtn.new_node(key, value, "RED") 
     
     if root['key'] == key:
         root['value'] = value
