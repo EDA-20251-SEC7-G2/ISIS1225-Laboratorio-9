@@ -1,4 +1,4 @@
-import rbt_node as rbtn
+from DataStructures.Tree import rbt_node as rbtn
 
 def new_map():
     dev = {
