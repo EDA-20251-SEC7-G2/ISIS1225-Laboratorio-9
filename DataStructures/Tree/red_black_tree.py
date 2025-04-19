@@ -103,8 +103,8 @@ def contains(my_rbt, key):
 def size_tree(root):
     return 0 if root is None else root['size']
 
-def is_empty(my_bst):
-    return True if my_bst['root'] == None else False
+def is_empty(my_rbt):
+    return True if my_rbt['root'] == None else False
 
 def size(my_rbt):
     return size_tree(my_rbt['root'])
