@@ -59,7 +59,8 @@ def print_menu():
     print("2- Cargar información de crimenes")
     print("3- Consultar crimenes en un rango de fechas")
     print("4- Consultar crimenes por codigo y fecha")
-    #TODO Agregar opción 5 en el menú, consultar por REPORTING_AREA
+    print("5- Consultar por crimenes por REPORTING_AREA")
+    #TODO (HECHO) Agregar opción 5 en el menú, consultar por REPORTING_AREA
     print("0- Salir")
     print("*******************************************")
 
@@ -70,7 +71,7 @@ def main():
     """
     # bandera para controlar el ciclo del menu
     working = True
-    crimefile = 'Boston Crimes//crime-utf8.csv'
+    crimefile = 'crime-utf8.csv'
 
     # ciclo del menu
     while working:
