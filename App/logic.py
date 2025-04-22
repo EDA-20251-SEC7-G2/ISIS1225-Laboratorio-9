@@ -270,7 +270,7 @@ def get_crimes_by_range(analyzer, initialDate, finalDate):
     lst = rbt.values(analyzer["dateIndex"], initialDate.date(), finalDate.date())
     totalcrimes = 0
     for lstdate in lst["elements"]:
-        totalcrimes += al.size(lstdate["lstcrimes"])
+        totalcrimes += lp.size(lstdate["lstcrimes"])
     return totalcrimes
 
 

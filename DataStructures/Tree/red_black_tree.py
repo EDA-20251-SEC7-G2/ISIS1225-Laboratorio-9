@@ -1,5 +1,6 @@
 from DataStructures.Tree import rbt_node as rbtn
 from DataStructures.List import single_linked_list as sl
+from DataStructures.List import array_list as al
 
 def new_map():
     dev = {
@@ -185,12 +186,12 @@ def values_range(root, key_initial, key_final, list_values):
     if key_initial < root['key']:
         values_range(root['left'], key_initial, key_final, list_values)
     if key_initial <= root['key'] <= key_final:
-        sl.add_last(list_values, root['value'])
+        al.add_last(list_values, root['value'])
     if root['key'] < key_final:
         values_range(root['right'], key_initial, key_final, list_values)
 
 def values(my_rbt, key_initial, key_final):
-    values_list = sl.new_list()
+    values_list = al.new_list()
     values_range(my_rbt['root'], key_initial, key_final, values_list)
     return values_list
         
