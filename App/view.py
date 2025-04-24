@@ -111,6 +111,11 @@ def main():
             print("\nBuscando crimenes en un rango de areas: ")
             print("Las areas estan numeradas con enteros (1 - 962)")
             print("Un area desconocida tiene el el numero 9999")
+            initialArea = input("Ingrese el area inicial: ")
+            finalArea = input("Ingrese el area final: ")
+            numcrimenesarea = logic.get_crimes_by_range_area(control, initialArea, finalArea)
+            print("\nTotal de crimenes en el rango de areas: " + str(numcrimenesarea))
+            
         else:
             sys.exit(0)
     sys.exit(0)
